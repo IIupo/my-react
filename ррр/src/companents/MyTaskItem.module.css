@@ -1,0 +1,66 @@
+.myTIS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 736px;
+  color: rgb(242, 242, 242);
+  background-color: rgb(38, 38, 38);
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 8px;
+  height: 56px;
+ 
+}
+
+.myTISChecked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 736px;
+  color: rgb(128, 128, 128);
+  background-color: rgb(38, 38, 38);
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 8px;
+  text-decoration: line-through;
+  height: 56px;
+}
+
+.myTIS div,
+.myTISChecked div {
+  font-weight: 400;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.button {
+  background-color: rgb(38, 38, 38);
+  border: 1px solid rgb(38, 38, 38);
+  cursor: pointer;
+
+}
+
+.checkboxRound {
+  width: 17.45px;
+  height: 17.45px;
+  background-color: rgb(38, 38, 38);
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1.5px solid rgb(78, 168, 222);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.checkboxRound:checked {
+  background-image: url("/src/companents/img/checked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(94, 96, 206);
+}
+
+.hover {
+  background-color: white;
+  color: rgb(128, 128, 128);
+  transform: translateY(20px);
+}

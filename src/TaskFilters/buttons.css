@@ -1,0 +1,21 @@
+.filter_btn {
+  width: 125px;
+  height: 54px;
+
+  color: rgb(242, 242, 242);
+  background-color: rgb(30, 111, 159);
+  border: 1px solid rgb(30, 111, 159);
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.filter_btn div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn_group {
+  display: flex;
+  gap:10px;
+}

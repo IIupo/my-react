@@ -1,0 +1,52 @@
+#root {
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.filter {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.filter div {
+  display: flex;
+  gap: 16px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+}
+.counter div {
+  display: flex;
+  align-items: center;
+  color: rgb(78, 168, 222);
+  gap: 8px;
+}
+
+.counter div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  background-color: rgb(51, 51, 51);
+  border-radius: 999px;
+  color: rgb(217, 217, 217);
+}
+
+.filter div {
+  display: flex;
+  gap: 16px;
+}
+
+.noTask {
+  color: white;
+  font-size: 20px;
+}
+.form {
+  padding-bottom: 56px;
+  padding-top: 72px;
+}

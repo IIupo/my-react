@@ -1,0 +1,10 @@
+.myInputEdit {
+  width: 596px;
+  background-color: rgb(38, 38, 38);
+  color: rgb(242, 242, 242);
+}
+.myInputEdit:focus-visible {
+  border: 1px solid rgb(38, 38, 38);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  outline-width: 0;
+}
