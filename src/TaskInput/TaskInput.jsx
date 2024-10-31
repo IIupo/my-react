@@ -5,6 +5,12 @@ import './input.css'
 import {ReactComponent as Add} from './Add.svg'
 
 class TaskInput extends React.Component {
+  handleAddTask = (e) => {
+    if (e.key === 'Enter') {
+      this.props.addTask();
+    }
+  }
+
   render() {
     const { input, handleChange, addTask } = this.props;
     return (
@@ -15,6 +21,7 @@ class TaskInput extends React.Component {
           value={input}
           onChange={handleChange}
           placeholder="Добавить новую задачу..."
+          onKeyDown={this.handleAddTask}
         />
         <button className='add_task_btn' onClick={addTask}><div>Добавить<Add/></div></button>
       </div>
@@ -23,6 +30,7 @@ class TaskInput extends React.Component {
 }
 
 TaskInput.propTypes = {
+  task: PropTypes.object.isRequired,
   input: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
   addTask: PropTypes.func.isRequired,

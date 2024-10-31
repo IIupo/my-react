@@ -1,7 +1,6 @@
 .filter_btn {
   width: 125px;
-  height: 54px;
-
+  height: 45px; 
   color: rgb(242, 242, 242);
   background-color: rgb(30, 111, 159);
   border: 1px solid rgb(30, 111, 159);
@@ -11,7 +10,7 @@
 
 .filter_btn_off {
   width: 125px;
-  height: 54px;
+  height: 45px;
 
   color: rgb(242, 242, 242);
   background-color: rgb(9, 34, 48);
