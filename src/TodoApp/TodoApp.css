@@ -58,3 +58,16 @@
   direction: row;  
   gap: 5px;
   }
+  button {
+    cursor: pointer;
+  }
+
+  .counter strong div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    background-color: rgb(51, 51, 51);
+    border-radius: 999px;
+    color: rgb(217, 217, 217);
+  }

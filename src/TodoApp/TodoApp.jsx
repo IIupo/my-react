@@ -3,7 +3,7 @@ import {TaskInput} from '../TaskInput/TaskInput';
 import {TaskList} from '../TaskList/TaskList';
 import {TaskFilters} from '../TaskFilters/TaskFilters';
 import './TodoApp.css'
-import {ReactComponent as Logo} from './Logo.svg'
+
 class TodoApp extends React.Component {
   constructor(props) {
     super(props);
@@ -64,12 +64,12 @@ class TodoApp extends React.Component {
     });
   };
 
-  editTask = (id) => {
-    const task = this.state.tasks.find((task) => task.id === id);
-    if (task) {
-      this.setState({ editingId: id, editingText: task.text });
-    }
-  };
+  editTask = (id, text) => {
+    this.setState({
+      editingId: id,
+      editingText: text || this.state.tasks.find(task => task.id === id).text
+    });
+  }
 
   updateTask = (id) => {
     this.setState((prevState) => {

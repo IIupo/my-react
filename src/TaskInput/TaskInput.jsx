@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import './input.css'
@@ -8,7 +8,7 @@ class TaskInput extends React.Component {
   render() {
     const { input, handleChange, addTask } = this.props;
     return (
-      <div>
+      <div className='input_button'>
         <input
           className='input_main'
           type="text"
