@@ -60,6 +60,7 @@ class TodoApp extends React.Component {
     this.setState((prevState) => {
       const updatedTasks = prevState.tasks.filter((task) => !task.completed);
       this.saveTasksToLocalStorage(updatedTasks);
+      this.setFilter('all');
       return { tasks: updatedTasks };
     });
   };
